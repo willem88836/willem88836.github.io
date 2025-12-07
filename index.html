@@ -3,43 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Willem Meijer</title>
-    <!-- Font Awesome Link -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Willem Meijer | Researcher</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h2 class="name">Willem Meijer</h2>
-            <br/><br/>
-            <h1>Welcome to My Portfolio</h1>
-            <p>Your one-stop hub for all my professional profiles.</p>
+    <div class="background-animation"></div>
+    
+    <div class="glass-container">
+        <header class="profile-header">
+            <div class="profile-pic-container">
+                <!-- User: Please add your profile picture as 'profile.jpg' in this folder -->
+                <img src="mugshot1.png" alt="Willem Meijer" class="profile-pic" id="profile-img">
+            </div>
+            <h1 class="name">Willem Meijer</h1>
+            <h2 class="title">PhD Researcher in ML Engineering</h2>
+            <p class="bio">Advancing the quality of Machine Learning software and engineering.</p>
         </header>
+        
         <main>
-            <ul class="links">
-                <li><a href="https://www.linkedin.com/in/willem-meijer-74374010a/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a></li>
-                <li><a href="https://orcid.org/0000-0001-8482-3917" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-orcid"></i> ORCID
-                </a></li>
-                <li><a href="https://github.com/wmeijer221" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub
-                </a></li>
-                <li><a href="https://scholar.google.com/citations?user=SRBXFM0AAAAJ" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-graduation-cap"></i> Google Scholar
-                </a></li>
-                <li><a href="https://liu.se/en/employee/wilme33" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-university"></i> University Page
-                </a></li>
-            </ul>
+            <div class="links-grid">
+                <a href="https://www.linkedin.com/in/willem-meijer-74374010a/" target="_blank" rel="noopener noreferrer" class="link-card linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                
+                <a href="https://scholar.google.com/citations?user=SRBXFM0AAAAJ" target="_blank" rel="noopener noreferrer" class="link-card scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Google Scholar</span>
+                </a>
+
+                <a href="https://orcid.org/0000-0001-8482-3917" target="_blank" rel="noopener noreferrer" class="link-card orcid">
+                    <i class="fab fa-orcid"></i>
+                    <span>ORCID</span>
+                </a>
+
+                <a href="https://github.com/wmeijer221" target="_blank" rel="noopener noreferrer" class="link-card github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="https://liu.se/en/employee/wilme33" target="_blank" rel="noopener noreferrer" class="link-card university">
+                    <i class="fas fa-university"></i>
+                    <span>University Page</span>
+                </a>
+
+                <a href="mailto:willem.meijer@liu.se" class="link-card email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Me</span>
+                </a>
+            </div>
+            <a class="hidden" href="https://en.wikipedia.org/wiki/Cormorant">Here's a link to the cormorant wikipedia page.</a>
         </main>
+
         <footer>
-            <p>© 2024 Portfolio Willem Meijer. Built with ❤️ and hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+            <p>&copy; 2025 Willem Meijer</p>
         </footer>
     </div>
+
+    <!-- Script to handle profile pic fallback if needed, though ui-avatars is reliable -->
+    <script src="script.js"></script>
 </body>
 </html>
