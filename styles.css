@@ -201,8 +201,13 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 480px) {
     .glass-container {
-        padding: 2rem 1.5rem;
-        width: 95%;
+        padding: 2rem 1rem;
+        /* Reduce padding to give more breathing room */
+        width: 98%;
+        /* Use almost full width on small screens */
+        max-width: 100%;
+        border-radius: 0;
+        /* Optional: might look better full width, but let's keep radius small or removal if they want "panel" feeling */
     }
 
     .name {
@@ -211,11 +216,6 @@ footer {
 
     .links-grid {
         grid-template-columns: 1fr;
-    }
-
-    .profile-pic {
-        width: 120px;
-        height: 120px;
     }
 }
 
